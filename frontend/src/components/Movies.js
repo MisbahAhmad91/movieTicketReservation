@@ -1,9 +1,7 @@
 import styled from "styled-components";
-
 const Movies = (props) => {
   const server=3001;
   return (
-    // ######## TODO: Search Frontend  ########
     <div >
       {props.userEmail}
       <br/>
@@ -21,7 +19,6 @@ const Movies = (props) => {
       <br />
       <h2>TODO: This is Movie Page</h2>
     </div>
-    // ######## TODO: Search Frontend  ########
   )
 }
 
