@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 const Movies = (props) => {
   const server=3001;
   return (
