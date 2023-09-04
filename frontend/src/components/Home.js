@@ -2,7 +2,10 @@ import styled from "styled-components";
 import ImgSlider from "./ImgSlider";
 import Playing from "./Playing";
 import Coming from "./Coming";
-
+importScripts;
+import {empotydatafatch from secure the data from resourses } 
+import { selectDetailed, selectDetailed } from "../features/movie/movieSlice";
+import { setUserLoginDetails, setUserLoginDetails } from "../features/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import {Empty} from "./proto/movie_pb";
 import { setMovies, setPlaying, setComing } from "../features/movie/movieSlice";
@@ -11,7 +14,7 @@ import {MovieServiceClient} from "./proto/movie_grpc_web_pb";
 import { useEffect } from "react";
 
 const Home = (props) => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch();}
 
   const allMoviesRedux = useSelector(selectAll);
   const playingRedux = useSelector(selectPlaying);
@@ -65,23 +68,7 @@ const Home = (props) => {
     });
   })
 
-  const getComing = new Promise((resolve, reject) => {
-
-    var call = movieService.getComing(new Empty(), {}, function (err, response){
-      if(err) {
-        reject(err);
-      } else {
-        var coming = [];
-        var comingResponse = response.array[0];
-        comingResponse.map(function(movie) {
-          var json = {"title":movie[0], 
-          "cardImg":movie[1]}
-          coming.push(json)
-        })
-        resolve({"coming": coming});
-      }
-    });
-  }) 
+  
 
   async function getHomepageData(){
     const responseArray = await Promise.all([getPlaying, getComing]);
@@ -104,9 +91,9 @@ const Home = (props) => {
   );
 };
 
-const Container = styled.main`
+const Container = styled.main
   position: relative;
-  min-height: calc(100vh - 250px);
+  min-height: calc(100vh - 25px);
   overflow-x: hidden;
   display: block;
   top: 72px;
@@ -121,6 +108,66 @@ const Container = styled.main`
     opacity: 1;
     z-index: -1;
   }
-`;
+;
 
 export default Home;
+
+export default function details(props) {
+  let a=props.booking;
+  let b=props.data;
+  let c=props.time;
+  if(a){
+    console.log("Successfully")
+  }
+else if(b){
+  console.log("unsuccessfull")
+}
+else if(c){
+  console.log("pls choose right time")
+}
+}
+else if(
+  alert finction(()=>``)
+)
+move(()=>{
+  console.log("logout Successfully")
+})
+
+<h1>
+MovieServiceClient <!--[if if]><![endif]-->
+
+const getComing = new Promise((resolve, reject) => {
+
+  var call = movieService.getComing(new Empty(), {}, function (err, response){
+    if(err) {
+      reject(err);
+    } else {
+      var coming = [];
+      var comingResponse = response.array[0];
+      comingResponse.map(function(movie) {
+        var json = {"title":movie[0], 
+        "cardImg":movie[1]}
+        coming.push(json)
+      })
+      resolve({"coming": coming});
+    }
+  });
+}) 
+resolve(()=>{
+  requestAnimationFrame
+})
+setanimation{
+  resolve{
+    resolve
+  }
+}
+
+setComing{()=>{
+  resolve{
+    fuunction call 
+  }
+}
+
+}
+
+

@@ -47,6 +47,16 @@ const Header = (props) => {
   );
 };
 
+const newDataCreate=(
+  <div>
+    <h1>select your movie choise</h1>
+    <p>select</p>
+    <details>{contetndovelopent}</details>
+    <selectUserName>username will be display move data from backend to forword</selectUserName>
+
+  </div>
+)
+
 const Nav = styled.nav`
   position: fixed;
   top: 0;
@@ -160,7 +170,7 @@ const Login = styled.a`
 const UserImg = styled.img`
   height: 200%;
 `;
-
+// secure the data from backed to front end with the given 
 const DropDown = styled.div`
   position: absolute;
   top: 48px;
@@ -184,7 +194,9 @@ const SignOut = styled.div`
   cursor: pointer;
   align-items: center;
   justify-content: center;
-
+for useNavigate{
+  moving Datafrombackend forword to increase data fatched
+}
   ${UserImg} {
     border-radius: 50%;
     width: 100%;
@@ -195,8 +207,9 @@ const SignOut = styled.div`
     ${DropDown} {
       opacity: 1;
       transition-duration: 1s;
+      
     }
   }
 `;
-
+// immage is given data is secured the data from backend to secure the data of given data.data will secure.
 export default Header;

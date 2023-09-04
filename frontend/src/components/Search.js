@@ -8,7 +8,6 @@ import MVSearch from "./MVSearch"
 
 const Search = (props) => {
   return (
-    // ######## TODO: Search Frontend  ########
     <div className="center">
       <br />
       <br />
@@ -17,7 +16,7 @@ const Search = (props) => {
       <h1 className="title">Movie Search</h1>
       <MVSearch />
     </div>
-    // ######## TODO: Search Frontend  ########
+    
   )
 }
 

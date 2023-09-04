@@ -1,11 +1,19 @@
 import styled from "styled-components";
 import "./styles.css";
+import "./Dashboard"
+import "./Home"
 import "./normalize.css";
+import { SignupServiceClient } from "./proto/signup_grpc_web_pb";
 import { SignupServiceClient } from './proto/signup_grpc_web_pb'
 import { SignupRequest, SignupForm } from "./proto/signup_pb";
 import $ from "jquery"
+import { selectUserEmail, setUserLoginDetails } from "../features/user/userSlice";
+import { updateUserServicePromiseClient, updateUserServicePromiseClient, updateUserServicePromiseClient, } from "./proto/updateUser_grpc_web_pb";
+import { selectUserEmail } from "../features/user/userSlice";
+import { updateUserServicePromiseClient } from "./proto/updateUser_grpc_web_pb";
+import { selectDetailed, selectDetailed } from "../features/movie/movieSlice";
 import { useNavigate } from "react-router-dom";
-
+// import {weight} from store data from secure of hyperlinks from the resourse 
 const Singup = () => {
     const INTERVAL = 3000;
     const navigate = useNavigate();
@@ -57,6 +65,13 @@ const Singup = () => {
             required
           />
 
+           <input
+            type="text"
+            name="name"
+            className="field"
+            placeholder="Enter name"
+            required
+          />  
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -102,4 +117,27 @@ const Link = styled.div`
     color: blue;
   }
 `;
+// const lastDetailData=styled.div`
+//     <a href="https://codesandbox.io/p/github" target="_blank" rel="noopener noreferrer"></a>
+//     <div Datafrombackend></div>
+    <form>
+    <h2>userName
+    </h2>
+    <input type="text" name="userName" required>
+    <h2>password
+    </h2>
+    <input type="text" name="password" required>
+    <button onClick="()=>{
+           forEach()=>console.log(data stored successfully></button>
+    </form>
+
+console.log("user data fatch">
+
 export default Singup;
+
+// const api="app.eventlistner(3001,req,rec)=>{
+    //  console.log("fatched data secured from backend to frontend")
+//   req(<a href="https://mail.google.com/">)
+//   rec("data not found")
+// }
+

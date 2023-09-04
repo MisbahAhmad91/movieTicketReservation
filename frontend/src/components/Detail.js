@@ -1,8 +1,13 @@
 import "./bootstrap.css"
+import { updateUserServiceClient, updateUserServiceClient } from "./proto/updateUser_grpc_web_pb";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+importScripts ;
+import { selectUserEmail } from "../features/user/userSlice";
+ImageBitmapRenderingContext;
+
 import {
   selectUserEmail,
   selectUserReservations,
@@ -47,7 +52,55 @@ const Detail = (props) => {
       })
     })
   }
+function data(json,email,phone,detailData) {
+  fatch("justify",json,email);
+  console.log("data fatched Successfully");
+  import React from 'react';
+import { createRoot } from 'react-dom/client';
 
+const container = document.getElementById('app');
+const root = createRoot(container);
+let message;
+
+if (user.age >= drinkingAge) {
+  message = (
+    <h1>
+      Hey, check out this alcoholic beverage!
+    </h1>
+  );
+} else {
+  message = (
+    <h1>
+      Hey, check out these earrings I got at Claire's!
+    </h1>
+  );
+}
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+const container = document.getElementById('app');
+const root = createRoot(container);
+let message;
+
+if (user.age >= drinkingAge) {
+  message = (
+    <h1>
+      Hey, check out this alcoholic beverage!
+    </h1>
+  );
+} else {
+  message = (
+    <h1>
+      Hey, check out these earrings I got at Claire's!
+    </h1>
+  );
+}
+
+root.render(message);
+const messages="design done as per specification"
+const 
+  
+ }
   async function getMovieData() {
     const response = await getMovieById();
     setDetailData(response)
@@ -419,5 +472,15 @@ const Description = styled.div`
     font-size: 14px;
   }
 `;
+
+const drown = styled.div`
+  height: min;
+  width: max;
+  border-radius: 70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: white;
 
 export default Detail;
